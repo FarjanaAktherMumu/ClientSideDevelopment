@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Print-specific style */
+body{
+    font-family: serif;
+    color: rgb(210, 11, 11);
+    background: none;
+    margin: 0;
+
+}
+h1,h2{
+    color: rgb(0, 155, 127);
+    margin: 0;
+    padding: 0;
+    background: none;
+
+}
+pre{
+    border: none;
+    background: none;
+}
