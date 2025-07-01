@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewwport" content="width=device-width initial-scale=1.0">
+        <title>Document</title>
+       
+    </head>
+
+    <body>
+
+        <button onclick="increment()">Click me!</button>
+        <p id="output">Answer:0</p>
+        <script>
+            let X=10;
+            let Y=5;
+            let Z=X+Y;
+            console.log("Task 1: Z=X+Y is :",Z);
+            
+            //tASK2
+            Z=X+Y;
+            console.log("Task 2 is now: ",Z);
+
+            //tASK3
+            Z=X*Y;
+            console.log("Task 3 is : ",Z);
+
+            //tASK4
+            let remainder=15%9;
+            console.log("Task 4  remainder of 15/9 is: ",remainder);
+
+            //Task5
+            let answer=0;
+            function increment(){
+                answer +=1;//increment answer 1 each time the button is clicked
+                console.log("Task 5 answer is:", answer);
+
+                document.getElementById("output").innerHTML = "Answer:" + answer; 
+            }
+
+
+
+
+
+
+        </script>
+
+    </body>
+</html>
