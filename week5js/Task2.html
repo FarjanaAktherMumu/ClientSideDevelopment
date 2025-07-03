@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewwport" content="width=device-width initial-scale=1.0">
+        <title>Document</title>
+       
+    </head>
+
+    <body>
+        
+        <h2>Array:Print the array each time</h2>
+        <div id="output"></div> <!--to display result array-->
+        <script>
+            
+            //1: Create an array
+            var styles = ["Jazz","Blues"];
+
+            //2: function to display array as comma seperated
+            function updateOutput(){
+                document.querySelector('#output').innerHTML += styles.join(", ")+"<br>";
+            }
+            updateOutput(); //show initial array
+            
+            //3: Add rock-roll at the end of array
+            styles.push("Rock-n-Roll");
+            updateOutput(); //updated array
+
+            //4: Change middle item to classics
+            var middleIndex = Math.floor(styles.length / 2);
+            styles[middleIndex] = "Classics";
+            updateOutput(); //updated array
+
+            //5: Remove first item from array
+            styles.shift();
+            updateOutput(); //updated array
+            
+            //6: add rap and reggae to start of array
+            styles.unshift("Rap","Reggae");
+            updateOutput(); //updated array
+
+
+
+        </script>
+
+    </body>
+</html>
