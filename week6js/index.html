@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewwport" content="width=device-width initial-scale=1.0">
+        <title>Document</title>
+       
+    </head>
+
+   <body>
+
+        
+        <script>
+            function checkAge(age){
+                if(age>=18){
+                    return true;
+                } else{
+                    return confirm('Do you have permission from parents?');
+                }
+            }
+
+            let age = prompt('How old are you?',18);
+            let username= prompt('What is your name?');
+            alert("hello"  + username);
+
+
+            if(checkAge(age)){
+                    alert('Success');
+                } else{
+                    alert('Denied');
+                }
+
+
+        
+
+        </script>
+
+    </body>
+</html>
